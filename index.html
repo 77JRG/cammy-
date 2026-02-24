@@ -161,10 +161,11 @@ function aceitou(){
 }
 </script>
 <script>
-fetch('https://api.countapi.xyz/hit/77jrgcammy/pedido')
-.then(res => res.json())
-.then(res => {
-    console.log("Visitas:", res.value);
+
+fetch("https://counterapi.dev/api/77jrgcammy/pedido/up")
+  .then(res => res.json())
+  .then(data => {
+    console.log("Visitas:", data.count);
 });
 </script>
 </body>
