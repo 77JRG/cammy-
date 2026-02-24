@@ -160,6 +160,12 @@ function aceitou(){
     alert("Agora você é oficialmente minha de novo to te esperando gatinha ❤️");
 }
 </script>
-
+<script>
+fetch('https://api.countapi.xyz/hit/77jrgcammy/pedido')
+.then(res => res.json())
+.then(res => {
+    console.log("Visitas:", res.value);
+});
+</script>
 </body>
 </html>
